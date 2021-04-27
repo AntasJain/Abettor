@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_margin="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:hint="01-09-1221"
+            android:id="@+id/dateExpense"/>
+      <LinearLayout
+          android:layout_marginTop="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+            <TextView
+                android:fontFamily="@font/cambay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:hint="500"
+                android:textSize="30sp"
+                android:id="@+id/money"/>
+            <TextView
+                android:fontFamily="@font/cambay"
+                android:id="@+id/details"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:hint="Money details"/>
+    </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

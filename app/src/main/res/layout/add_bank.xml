@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:hint="Bank Name"
+        android:id="@+id/bank_Name"/>
+    <EditText
+        android:layout_marginBottom="2dp"
+        android:id="@+id/accountNum"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:hint="Account Number"/>
+    <EditText
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:hint="IFSC"
+        android:id="@+id/ifsc"/>
+</LinearLayout>

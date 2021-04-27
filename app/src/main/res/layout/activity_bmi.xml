@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="600dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="match_parent">
+        <TextView
+
+            android:id="@+id/hd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="30dp"
+            android:text="B.M.I Calculator"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hd2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hd1"
+            android:text="Body Mass Index"
+            android:textSize="15sp"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.15"
+            android:orientation="horizontal"/>
+        <EditText
+            android:hint="Weight in kilogram"
+            android:padding="20dp"
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/guideline1"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <EditText
+            android:id="@+id/height"
+            android:hint="Height in Centimetres"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weight"/>
+        <Button
+            android:id="@+id/bntCalc"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/height"
+            android:layout_margin="10dp"
+            android:text="Calculate BMI"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/clear_data"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="15sp"
+            android:text="Clear Data"
+            app:layout_constraintTop_toBottomOf="@id/bntCalc"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/guideline3"
+            app:layout_constraintGuide_percent="0.75"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            android:text="BMI CHART"
+            android:id="@+id/hd3"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normal Weight\t18.5 - 24.9"
+            app:layout_constraintTop_toBottomOf="@id/d1"
+            android:id="@+id/d2"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Overweight\t25.0 - 29.9"
+            app:layout_constraintTop_toBottomOf="@id/d2"
+            android:id="@+id/d3"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Obesity Class I\t30.0 - 34.9"
+            app:layout_constraintTop_toBottomOf="@id/d3"
+            android:id="@+id/d4"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Obesity Class II\t35.0 - 39.9"
+            app:layout_constraintTop_toBottomOf="@id/d4"
+            android:id="@+id/d5"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Obesity Class III\tAbove 40"
+            app:layout_constraintTop_toBottomOf="@id/d5"
+            android:id="@+id/d6"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Underweight\tBelow 18.5"
+            app:layout_constraintTop_toBottomOf="@id/hd3"
+            android:id="@+id/d1"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/clear_data"
+            android:textSize="15sp"
+            android:id="@+id/output"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

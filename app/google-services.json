@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "768158788040",
+    "project_id": "abettor-237d3",
+    "storage_bucket": "abettor-237d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768158788040:android:d50b889d0438b3b9f978fd",
+        "android_client_info": {
+          "package_name": "com.jainantas.abettor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768158788040-2u2oe1gvobjj27li70km9tairnb3jioi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jainantas.abettor",
+            "certificate_hash": "0e871e83ea411fec32073ab4938cfa1e7be452f5"
+          }
+        },
+        {
+          "client_id": "768158788040-96mp5oph9b56a6va4grqgt0bs1aheetf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1OdDQ-5LAFI6YAJkRuIJfuTEf0_lzwLQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768158788040-96mp5oph9b56a6va4grqgt0bs1aheetf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

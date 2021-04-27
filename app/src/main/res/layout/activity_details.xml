@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:padding="10dp"
+        android:background="@drawable/grad_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Save Details Here"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/ageInput"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/dobInput"
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DOB: 10-08-1960"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bgInput"
+        android:hint="B+"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/heightInput"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Height in Ft.Inch format"
+        android:textSize="20sp"/>
+
+
+    <EditText
+        android:id="@+id/weightInput"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Weight in KG"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/addressInput"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/cityInput"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/contactInput"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact"
+        android:textSize="20sp"/>
+    <Button
+        android:padding="10dp"
+        android:id="@+id/saveDetails"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Details"
+        android:textSize="20sp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/hd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="parent"
+        android:text="Add Medicine"/>
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_outline_calendar_today_24"
+        app:layout_constraintBottom_toBottomOf="@+id/startDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/startDate"
+        app:layout_constraintTop_toTopOf="@+id/startDate" />
+
+    <EditText
+
+        android:inputType="date"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/hd1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/startDate"
+        android:hint="Start Date"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_outline_calendar_today_24"
+        app:layout_constraintBottom_toBottomOf="@+id/endDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/endDate"
+        app:layout_constraintTop_toBottomOf="@+id/startDate" />
+    <EditText
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/startDate"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="20dp"
+        android:hint="End Date"
+        android:id="@+id/endDate"/>
+    <EditText
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/endDate"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/med_name"
+        android:hint="Medicine Name"/>
+    <EditText
+        android:hint="Description"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/med_name"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/desc"/>
+    <EditText
+        android:gravity="center"
+        android:inputType="number"
+        android:id="@+id/times"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/desc"
+        app:layout_constraintTop_toBottomOf="@id/desc" />
+
+    <TextView
+        android:id="@+id/tad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Times a Day"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/times"
+        app:layout_constraintStart_toEndOf="@+id/times"
+        app:layout_constraintTop_toBottomOf="@id/desc"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:textSize="20dp"
+        android:checked="false"
+        android:buttonTint="@color/design_default_color_primary_dark"
+        app:switchMinWidth="20dp"
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/times"
+        app:layout_constraintStart_toStartOf="@id/times"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Customize Days"
+        />
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/checkLayout"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/switch1"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/med_name">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MONDAY"
+                android:id="@+id/mon"
+                android:checked="false"/>
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TUESDAY"
+                android:id="@+id/tues"
+                android:checked="false"/>
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wed"
+                android:text="WEDNESDAY"
+                android:checked="false"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THURSDAY"
+                android:id="@+id/thu"
+                android:checked="false"/>
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FRIDAY"
+                android:id="@+id/fri"
+                android:checked="false"/>
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sat"
+                android:text="SATURDAY"
+                android:checked="false"/>
+        </LinearLayout>
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sun"
+            android:text="SUNDAY"
+            android:checked="false"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save To TIME TABLE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

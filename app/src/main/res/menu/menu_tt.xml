@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/tt"
+    android:icon="@drawable/ic_medicine"
+    android:title="My Time-Table"
+    android:titleCondensed="TimeTable"
+    />
+    <item android:id="@+id/addMed"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="Add Medicine"/>
+</menu>

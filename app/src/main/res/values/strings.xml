@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Abettor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bmi_40_tobesity_class_3_nbmi_35_to_39_9_obesity_class_2_nbmi_30_to_34_9_obesity_class_1_nbmi_25_to_29_9_over_weight_nbmi_18_5_to_24_9_normal_weight_nbmi_18_4_underweight"><![CDATA[BMI >=40\tOBESITY (Class 3)\nBMI (35 to 39..9) OBESITY (Class 2)\nBMI (30 to 34.9) OBESITY (Class 1)\nBMI (25 to 29.9) OVER WEIGHT\nBMI (18.5 to 24.9) NORMAL WEIGHT\nBMI <=18.4 UNDERWEIGHT]]></string>
+    <string name="title_activity_view_expenses">ViewExpenses</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="channel_name">Abettor</string>
+    <string name="channel_description">Abettor</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+</resources>

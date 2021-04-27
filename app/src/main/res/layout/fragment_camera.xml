@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.CameraFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_centerInParent="true">
+            <RelativeLayout
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:id="@+id/cameraClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/descr"
+                    android:src="@drawable/ic_outline_photo_camera_24"/>
+                <EditText
+                    android:id="@+id/descr"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:textSize="20sp" />
+                <Button
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SAVE"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</FrameLayout>
