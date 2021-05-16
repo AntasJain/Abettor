@@ -170,7 +170,7 @@ public class HealthFragment extends Fragment {
     }
 
     public void getWeather() {
-        String url = "http://api.openweathermap.org/data/2.5/weather?q=Mainpuri&appid=b661a44c7a415cdce1a09129b7aca671";
+        String url = "API-KEY";
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
