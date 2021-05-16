@@ -257,10 +257,10 @@ public class FinanceFragment extends Fragment {
     }
 
     public void getExchange() {
-        String USD = "https://v6.exchangerate-api.com/v6/77114639d5f35f380065fefa/latest/USD";
-        String AUD = "https://v6.exchangerate-api.com/v6/77114639d5f35f380065fefa/latest/AUD";
-        String CAD = "https://v6.exchangerate-api.com/v6/77114639d5f35f380065fefa/latest/CAD";
-        String EUR = "https://v6.exchangerate-api.com/v6/77114639d5f35f380065fefa/latest/EUR";
+        String USD = "https://v6.exchangerate-api.com/v6/key/USD";
+        String AUD = "https://v6.exchangerate-api.com/v6/key/AUD";
+        String CAD = "https://v6.exchangerate-api.com/v6/key/CAD";
+        String EUR = "https://v6.exchangerate-api.com/v6/key/EUR";
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, USD, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
